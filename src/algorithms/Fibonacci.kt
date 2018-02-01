@@ -13,3 +13,27 @@ fun getFibonacciNumber(n: Int): Long {
 
     return numbers[n]
 }
+
+/**
+ * Последняя цифра n-го числа Фибоначчи.
+ */
+fun getLasDigitOfFibonacciNumber(n: Int): Int {
+    return when (n) {
+        0 -> 0
+        1, 2 -> 1
+        else -> {
+            var fibNum = 1
+            var prevFibNum = 1
+            var prevPrevNum = 0
+
+            for (i in (3..n)) {
+                val newPrevPrevNum = prevFibNum
+                fibNum = (fibNum + prevFibNum) % 10
+                prevFibNum = (prevFibNum + prevPrevNum) % 10
+                prevPrevNum = newPrevPrevNum
+            }
+
+            fibNum
+        }
+    }
+}
