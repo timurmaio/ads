@@ -15,3 +15,4 @@ Algorithms and data structures
 
 ### Сортировки
 - Подсчётом
+- Быстрая

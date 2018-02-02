@@ -8,8 +8,7 @@ fun gcd(a: Int, b: Int): Int {
     var quotient = a
     var remainder = b
 
-    while (remainder != 0)
-    {
+    while (remainder != 0) {
         val tmp = remainder
         remainder = quotient % remainder
         quotient = tmp

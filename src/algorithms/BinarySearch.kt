@@ -9,21 +9,17 @@ fun binarySearch(array: Array<Int>, n: Int): Int? {
     var l = 0
     var r = array.size
 
-    while (l <= r)
-    {
+    while (l <= r) {
         val m = (l + r)/2
 
-        if (array[m] == n)
-        {
+        if (array[m] == n) {
             return m
         }
 
-        if (array[m] > n)
-        {
+        if (array[m] > n) {
             r = m - 1
         }
-        else
-        {
+        else {
             l = m + 1
         }
     }
