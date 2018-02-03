@@ -6,7 +6,7 @@ import kotlin.test.assertTrue
 
 class CountingTest {
     @Test
-    fun extendedEuclideanTest() {
+    fun countingSortTest() {
         val array = arrayOf(9, 4, 3, 6, 4, 6, 1, 0)
         val result = countingSort(array)
 

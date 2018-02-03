@@ -8,7 +8,7 @@ import kotlin.test.assertEquals
 
 class ReverseInputTest {
     @Test
-    fun extendedEuclideanTest() {
+    fun parseInputTest() {
         // stub IO
         val input = "1\n2\n3"
         val output = ByteArrayOutputStream()

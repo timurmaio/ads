@@ -6,7 +6,7 @@ import kotlin.test.assertTrue
 
 class QuickTest {
     @Test
-    fun extendedEuclideanTest() {
+    fun `awesome quickSort Test`() {
         val array = arrayOf(9, 4, 3, 6, 4, 6, 1, 0)
         val result = array.clone()
 
