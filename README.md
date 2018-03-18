@@ -42,3 +42,11 @@ Algorithms and data structures
 ### Связный список (WIP)
 
 ### Бинарное дерево (поиска) (WIP)
+
+
+## Запуск в JVM
+
+```
+kotlinc Source.kt -include-runtime -d Destination.jar
+java -jar Destination.jar
+```
